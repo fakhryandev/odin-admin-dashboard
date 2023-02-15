@@ -1,11 +1,16 @@
+:root {
+  --white-color: #e4e4e4;
+}
+
 body {
   display: grid;
-  max-height: 100vh;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
   grid-template-areas:
-    "nav header header header header"
-    "nav main main main main"
-    "nav main main main main"
-    "nav main main main main";
+    "nav header header header header header"
+    "nav main main main main main"
+    "nav main main main main main"
+    "nav main main main main main";
 }
 
 header {
@@ -16,7 +21,42 @@ header {
 nav {
   background-color: blue;
   grid-area: nav;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+
+svg path {
+  fill: var(--white-color);
+}
+
+.menu-item {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.menu-item span {
+  font-size: 1.5rem;
+  margin-right: 0.8em;
 }
 
 main {
