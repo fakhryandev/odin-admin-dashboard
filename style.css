@@ -1,0 +1,25 @@
+body {
+  display: grid;
+  max-height: 100vh;
+  grid-template-areas:
+    "nav header header header header"
+    "nav main main main main"
+    "nav main main main main"
+    "nav main main main main";
+}
+
+header {
+  background-color: red;
+  grid-area: header;
+}
+
+nav {
+  background-color: blue;
+  grid-area: nav;
+  height: 100vh;
+}
+
+main {
+  background-color: green;
+  grid-area: main;
+}
