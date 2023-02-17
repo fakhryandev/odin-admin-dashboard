@@ -128,6 +128,7 @@ main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+  column-gap: 2em;
 }
 
 .section-heading {
@@ -145,6 +146,43 @@ main {
 
 .projects-container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2em;
+  column-gap: 1.5em;
+}
+
+.project {
+  border-left: 0.5em solid yellow;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.project-heading {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.project-description {
+  font-size: 1em;
+  word-wrap: inherit;
+}
+
+.project-tools {
+  align-self: flex-end;
+  padding-right: 1em;
+  display: flex;
+  gap: 1.5em;
+  justify-content: space-between;
+}
+
+.project-tools span {
+  font-size: 1.5em;
 }
 
 .announcements-section {
